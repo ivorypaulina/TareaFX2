@@ -11,11 +11,11 @@ public class MainApp extends Application {
     public void start(Stage stage) throws Exception {
 
         FXMLLoader loader =
-                new FXMLLoader(MainApp.class.getResource("Login.fxml"));
+                new FXMLLoader(MainApp.class.getResource("Administrador.fxml"));
 
-        Scene scene = new Scene(loader.load());
+        Scene scene = new Scene(loader.load(), 1200, 800);
 
-        stage.setTitle("Login");
+        stage.setTitle("Panel Administrador");
         stage.setScene(scene);
         stage.show();
     }
