@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8.0.171"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+    <!-- BARRA SUPERIOR -->
+    <top>
+        <HBox alignment="CENTER_LEFT"
+              prefHeight="80"
+              style="-fx-background-color: linear-gradient(to right, #ec4899, #f472b6);
+                     -fx-padding: 0 20;
+                     -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);">
+
+            <Label text="PANEL CAJERO"
+                   style="-fx-text-fill:white;
+                          -fx-font-size:26px;
+                          -fx-font-weight:bold;"/>
+        </HBox>
+    </top>
+
+    <!-- CENTRO -->
+    <center>
+        <VBox alignment="CENTER"
+              spacing="20"
+              style="-fx-padding:25;
+                     -fx-background-color:#fdf2f8;">
+
+            <Label text="PRODUCTOS VENDIDOS"
+                   style="-fx-font-size:20px;
+                          -fx-font-weight:bold;
+                          -fx-text-fill:#be185d;"/>
+
+            <TableView prefWidth="600"
+                       prefHeight="320"
+                       style="-fx-background-color:white;
+                              -fx-border-color:#f9a8d4;
+                              -fx-border-radius:10;
+                              -fx-background-radius:10;">
+
+                <columns>
+                    <TableColumn text="Producto" prefWidth="250"/>
+                    <TableColumn text="Cantidad" prefWidth="150"/>
+                    <TableColumn text="Precio ($)" prefWidth="150"/>
+                </columns>
+
+            </TableView>
+
+        </VBox>
+    </center>
+
+</BorderPane>

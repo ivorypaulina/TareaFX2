@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane style="-fx-background-color: linear-gradient(to bottom,#ffe4ec,#ffd6e7);"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+
+    <left>
+        <VBox alignment="TOP_CENTER" prefHeight="402.0" prefWidth="257.0" spacing="20"
+              style="-fx-background-color:#db2777;-fx-padding:25;">
+
+            <Label style="-fx-text-fill:white;-fx-font-size:24px;-fx-font-weight:bold;" text="ADMINISTRADOR" />
+
+            <Button prefWidth="180" style="-fx-background-color:white;-fx-text-fill:#db2777;-fx-font-weight:bold;
+            -fx-background-radius:10;" text="Usuarios" />
+
+            <Button prefWidth="180" style="-fx-background-color:white;-fx-text-fill:#db2777;-fx-font-weight:bold;
+            -fx-background-radius:10;" text="Reportes" />
+
+            <Button prefWidth="180" style="-fx-background-color:white;-fx-text-fill:#db2777;-fx-font-weight:bold;
+            -fx-background-radius:10;" text="Configuración" />
+
+            <Button prefWidth="180" style="-fx-background-color:#be185d;-fx-text-fill:white;-fx-font-weight:bold;
+            -fx-background-radius:10;" text="Cerrar Sesión" />
+        </VBox>
+    </left>
+
+    <center>
+
+        <VBox alignment="CENTER" spacing="30" style="-fx-padding:30;">
+
+            <Label style="-fx-font-size:32px;-fx-font-weight:bold;-fx-text-fill:#be185d;"
+                   text="PANEL DE ADMINISTRACIÓN"/>
+
+            <HBox alignment="CENTER" spacing="25">
+
+                <VBox alignment="CENTER" prefHeight="120" prefWidth="180" style="-fx-background-color:white;
+                -fx-background-radius:20;-fx-padding:15;">
+
+                    <Label style="-fx-font-size:30px;-fx-font-weight:bold;-fx-text-fill:#db2777;" text="150" />
+
+                    <Label style="-fx-font-size:16px;" text="Usuarios" />
+                </VBox>
+
+                <VBox alignment="CENTER" prefHeight="120" prefWidth="180" style="-fx-background-color:white;
+                -fx-background-radius:20;-fx-padding:15;">
+
+                    <Label style="-fx-font-size:30px;-fx-font-weight:bold;-fx-text-fill:#db2777;" text="32" />
+
+                    <Label style="-fx-font-size:16px;" text="Ventas" />
+                </VBox>
+
+                <VBox alignment="CENTER" prefHeight="120" prefWidth="180" style="-fx-background-color:white;
+                -fx-background-radius:20;-fx-padding:15;">
+
+                    <Label style="-fx-font-size:30px;-fx-font-weight:bold;-fx-text-fill:#db2777;" text="2500" />
+
+                    <Label style="-fx-font-size:16px;" text="Ingresos" />
+                </VBox>
+
+            </HBox>
+
+            <VBox alignment="CENTER" prefWidth="600" spacing="10" style="-fx-background-color:white;
+            -fx-background-radius:20;-fx-padding:25;">
+
+                <Label style="-fx-font-size:22px;-fx-font-weight:bold;-fx-text-fill:#be185d;"
+                       text="Bienvenido al sistema" />
+
+                <Label style="-fx-font-size:14px;"
+                       text="Desde este panel puedes gestionar usuarios, revisar reportes y administrar la aplicación."
+                       wrapText="true" />
+
+            </VBox>
+
+        </VBox>
+
+    </center>
+
+</BorderPane>

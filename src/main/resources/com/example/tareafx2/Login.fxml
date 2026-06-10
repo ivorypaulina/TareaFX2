@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0"
+            prefWidth="800.0"
+            style="-fx-background-color: linear-gradient(to bottom right,#fbcfe8,#f9a8d4);"
+            xmlns="http://javafx.com/javafx/17.0.12"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.tareafx2.LoginController">
+
+    <VBox alignment="CENTER"
+          layoutX="213.0"
+          layoutY="64.0"
+          prefHeight="362.0"
+          prefWidth="362.0"
+          spacing="15.0"
+          style="-fx-background-color:white;-fx-background-radius:25;-fx-padding:30;
+          -fx-effect:dropshadow(gaussian,rgba(0,0,0,0.25),15,0,0,4);">
+
+        <Label style="-fx-font-size:24px;-fx-font-weight:bold;-fx-text-fill:#db2777;" text="🌸 SISTEMA DE ACCESO 🌸" />
+
+        <Separator />
+
+        <TextField fx:id="txtUsuario" prefWidth="250" promptText="Usuario" style="-fx-background-radius:10;
+        -fx-border-radius:10;-fx-border-color:#f9a8d4;" />
+
+        <PasswordField fx:id="txtPassword" prefWidth="250" promptText="Contraseña" style="-fx-background-radius:10;
+        -fx-border-radius:10;-fx-border-color:#f9a8d4;" />
+
+        <ComboBox fx:id="cbRol" prefWidth="250" promptText="Seleccione un rol" style="-fx-background-radius:10;
+        -fx-border-radius:10;-fx-border-color:#f9a8d4;" />
+
+        <HBox alignment="CENTER" spacing="10">
+
+            <Button onAction="#ingresar" style="-fx-background-color:#ec4899;-fx-text-fill:white;
+            -fx-background-radius:10;-fx-font-weight:bold;" text="Ingresar" />
+
+            <Button onAction="#salir" style="-fx-background-color:#f472b6;-fx-text-fill:white;-fx-background-radius:10;
+            -fx-font-weight:bold;" text="Salir" />
+
+        </HBox>
+
+    </VBox>
+
+</AnchorPane>

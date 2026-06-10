@@ -15,7 +15,7 @@ public class MainApp extends Application {
 
         Scene scene = new Scene(loader.load());
 
-        stage.setTitle("Sistema Login");
+        stage.setTitle("Login");
         stage.setScene(scene);
         stage.show();
     }
